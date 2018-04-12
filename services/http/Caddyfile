@@ -8,6 +8,8 @@ zsixtyfour.com {
 
   gzip
 
+  ext .html
+
   markdown /docs {
     ext .md
     css style.css
