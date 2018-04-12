@@ -1,0 +1,15 @@
+zsixtyfour.com {
+  tls zachnowicki@gmail.com
+
+  log / stdout {combined}
+  errors stderr
+
+  root /var/www/sites/zsixtyfour.com
+
+  gzip
+
+  markdown /docs {
+    ext .md
+    css style.css
+  }
+}

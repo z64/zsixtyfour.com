@@ -1,0 +1,7 @@
+version: "3.3"
+
+services:
+  dex:
+    image: dex:latest
+    env_file: ${COMPOSE_ROOT}/services/dex/secret.env
+    restart: always
