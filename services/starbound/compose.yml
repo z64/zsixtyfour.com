@@ -1,0 +1,13 @@
+version: "3.3"
+
+services:
+  starbound:
+    image: didstopia/starbound-server
+    volumes:
+      - type: bind
+        source: ${COMPOSE_ROOT}/data/starbound
+        target: /steamcmd/starbound
+    env_file: ${COMPOSE_ROOT}/services/starbound/secret.env
+    restart: always
+    ports:
+      - "45.55.69.26:21025:21025"
